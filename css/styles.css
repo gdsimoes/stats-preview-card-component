@@ -1,3 +1,33 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+}
+/* I need to paint the image pink */
+
+h1,
+h2 {
+    color: white;
+}
+
+strong {
+    color: hsl(277, 64%, 61%);
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h3 {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: "Lexend Deca", sans-serif;
+}
+
 footer {
     font-size: 11px;
     text-align: center;
