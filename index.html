@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <title>Frontend Mentor | Stats preview card component</title>
 
-  Get insights that help your business grow.
+        <meta
+            name="description"
+            content="This is the solution to the 'Stats preview card component' challenge on Frontend Mentor"
+        />
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+        <!-- CSS Remedy: https://github.com/jensimmons/cssremedy -->
+        <link rel="stylesheet" href="css/remedy.css" />
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <main>
+            <section class="card">
+                <h1>
+                    Get <strong>insights</strong> that help your business grow.
+                </h1>
+                <p>
+                    Discover the benefits of data analytics and make better
+                    decisions regarding revenue, customer experience, and
+                    overall efficiency.
+                </p>
+                <section class="stats">
+                    <div class="stat">
+                        <h2>10k+</h2>
+                        <p>companies</p>
+                    </div>
+                    <div class="stat">
+                        <h2>314</h2>
+                        <p>templates</p>
+                    </div>
+                    <div class="stat">
+                        <h2>12M+</h2>
+                        <p>queries</p>
+                    </div>
+                </section>
+            </section>
+            <img src="images/image-header-mobile.jpg" alt="Office workers" />
+        </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <footer>
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.gdsimoes.com">Guilherme Dias Simoes</a>.
+        </footer>
+        <!-- <div class="teste">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div> -->
+    </body>
 </html>

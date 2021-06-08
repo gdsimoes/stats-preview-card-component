@@ -1,0 +1,25 @@
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+.teste {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/* .box {
+    width: 300px;
+    height: 300px;
+}
+
+.box:first-child {
+    background-color: cornflowerblue;
+}
+
+.box:last-child {
+    background-color: crimson;
+} */
