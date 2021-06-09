@@ -1,13 +1,46 @@
 body {
     background-color: hsl(233, 47%, 7%);
+
     font-size: 15px;
     font-family: "Inter", sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     background-color: hsl(244, 38%, 16%);
+    padding: 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-/* I need to paint the image pink */
+
+main {
+    /* width: 90%; */
+    margin: 75px 5% 75px 5%;
+    border-radius: 10px;
+    overflow: hidden; /* This is necessary for border-radius to work */
+
+    background-color: hsl(277, 64%, 61%);
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap-reverse; */
+}
+
+img {
+    mix-blend-mode: multiply;
+    height: auto;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
 
 h1,
 h2 {
@@ -22,7 +55,7 @@ strong {
     color: hsla(0, 0%, 100%, 0.75);
 }
 
-h3 {
+.stat p {
     color: hsla(0, 0%, 100%, 0.6);
     text-transform: uppercase;
     font-family: "Lexend Deca", sans-serif;
@@ -31,25 +64,32 @@ h3 {
 footer {
     font-size: 11px;
     text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
 }
 footer a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(277, 64%, 61%);
 }
 
-.teste {
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
+@media screen and (min-width: 1000px) {
+    .card {
+        width: 50%;
+        text-align: left;
+        padding: 0 8%;
+    }
 
-/* .box {
-    width: 300px;
-    height: 300px;
-}
+    main {
+        /* This limited size avoids stretching the image */
+        max-width: 1080px;
 
-.box:first-child {
-    background-color: cornflowerblue;
-}
+        flex-direction: row;
+    }
 
-.box:last-child {
-    background-color: crimson;
-} */
+    img {
+        width: 50%;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
