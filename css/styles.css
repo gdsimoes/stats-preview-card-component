@@ -66,8 +66,14 @@ footer {
     text-align: center;
     color: hsla(0, 0%, 100%, 0.75);
 }
+
 footer a {
     color: hsl(277, 64%, 61%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 1000px) {
