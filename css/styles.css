@@ -1,8 +1,18 @@
-body {
-    background-color: hsl(233, 47%, 7%);
+/* Custom properties */
+:root {
+    --MainFont: "Inter", sans-serif;
+    --BodyCopy: 15px;
 
-    font-size: 15px;
-    font-family: "Inter", sans-serif;
+    --MainBackground: hsl(233, 47%, 7%);
+    --CardBackground: hsl(244, 38%, 16%);
+    --Accent: hsl(277, 64%, 61%);
+}
+
+body {
+    background-color: var(--MainBackground);
+
+    font-size: var(--BodyCopy);
+    font-family: var(--MainFont);
 
     min-height: 100vh;
     display: flex;
@@ -12,7 +22,7 @@ body {
 }
 
 .card {
-    background-color: hsl(244, 38%, 16%);
+    background-color: var(--CardBackground);
     padding: 0 5%;
     text-align: center;
     display: flex;
@@ -21,15 +31,13 @@ body {
 }
 
 main {
-    /* width: 90%; */
     margin: 75px 5% 75px 5%;
     border-radius: 10px;
     overflow: hidden; /* This is necessary for border-radius to work */
 
-    background-color: hsl(277, 64%, 61%);
+    background-color: var(--Accent);
     display: flex;
     flex-direction: column-reverse;
-    /* flex-wrap: wrap-reverse; */
 }
 
 img {
@@ -48,7 +56,7 @@ h2 {
 }
 
 strong {
-    color: hsl(277, 64%, 61%);
+    color: var(--Accent);
 }
 
 .card p {
@@ -68,7 +76,7 @@ footer {
 }
 
 footer a {
-    color: hsl(277, 64%, 61%);
+    color: var(--Accent);
     text-decoration: none;
 }
 
